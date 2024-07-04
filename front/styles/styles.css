@@ -1,0 +1,314 @@
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+p {
+    font-size: 15px;
+    margin: 4px;
+}
+
+body {
+    background: url("../images/cinema.jpg") center/cover no-repeat fixed;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: ease-in 0.5s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body img {
+    border-radius: 30px;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header input {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.barra {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0;
+    backdrop-filter: blur(7px);
+}
+
+.opacidad:hover {
+    opacity: 50%;
+}
+
+.carrusel {
+    width: 800px;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+main div {
+    margin: 10px;
+}
+
+.indice, .links {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.indice {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    margin-right: 400px;
+}
+
+.links {
+    font-size: 20px;
+    justify-content: end;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    text-align: center !important;
+    margin-top: auto;
+    background-color: #9e1625;
+}
+
+.redes {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.redes b {
+    border-bottom: 1px solid #ffffff;
+}
+
+.redes i {
+    color: #ffffff;
+}
+
+.contenedor {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.contenedor img {
+    width: 250px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.peliculas {
+    width: 600px;
+    height: 500px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    background: url("../images/void.gif") center/cover no-repeat fixed;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    border-radius: 20px !important;
+    overflow:auto;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.peliculas i {
+    color: #ffd700;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.contacto {
+    background-color: transparent;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contacto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.contacto p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.change {
+    background-color: #831925;
+}
+
+.tecnologias {
+    background-color: transparent;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tecnologias img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+.formulario {
+    width: auto;
+    display: inline-block;
+    opacity: 0.80;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 580px;
+    margin: 10px;
+}
+
+.formulario ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.formulario li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formulario span {
+    font-size: 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.formulario p {
+    font-size: 15px;
+}
+.formulario b {
+    text-decoration: underline;
+}
+
+.inputpelicula {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #ffffff;
+    padding: 5px;
+    margin: 10px;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.crearpel {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.crimson, .verdetecnologico {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.crimson {
+    color: #dc143c;
+}
+
+.verdetecnologico {
+    color: rgb(0, 204, 102);
+}
+
+.verdetecnologico, .crimson {
+    outline: 1px solid;
+    border-radius: 10px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.tecnologias h3{
+    text-decoration: underline;
+}
+
+.center button{
+    padding-right: 50px;
+}
+.generosdiv label, .generosdiv input{
+    display: inline-block;
+}
+#subir{
+    margin-right: 10px;
+}

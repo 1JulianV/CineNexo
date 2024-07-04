@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDICE - CineNexo</title>
+    <link rel="icon" href="images/icono.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/darkmode.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- Aquí esta la barra de navegación a diferentes secciones de la página -->
+      <div class="barra">
+        <a href="index.html" class="indice opacidad">CineNexo</a>
+        <a href="index.html" class="links opacidad"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="aboutme.html" class="links opacidad"><i class="fa-solid fa-user"></i> Sobre Mi</a>
+        <a href="Add-film.html" class="links opacidad"><i class="fa-solid fa-video"></i> Añadir Peliculas</a>
+        <!-- Aquí se puede usar el modo oscuro -->
+        <label class="links opacidad">
+          <input type="checkbox" id="check">
+          <span id="modoOscuro"></span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <!-- Aquì hay un formulario para enviar nuevas pelìculas a la base de datos -->
+      <div class="crearpel">
+      <div class="formulario change">
+       <article>
+        <form id="rellenar">
+          <h2><b>Añadir películas</b></h2>
+          <ul class="formulario">
+            <li>
+              <h3><label for="titulo">Título:</label></h3>
+            </li>
+            <li>
+              <input id="titulo" class="inputpelicula" type="text" placeholder="Escribe aqui" required>
+            </li>
+            <li>
+              <h3><label for="anio">Año:</label></h3>
+            </li>
+              <li>
+              <input id="anio" class="inputpelicula" type="text" placeholder="Escribe aqui" required>
+            </li>
+            <li>
+              <h3><label for="director">Director:</label></h3>
+            </li>
+              <li>
+              <input id="director" class="inputpelicula" type="text" placeholder="Escribe aqui" required>
+            </li>
+            <li>
+              <h3><label for="duracion">Duración:</label></h3>
+            </li>
+              <li>
+              <input id="duracion" class="inputpelicula" type="text" placeholder="Escribe aqui" required>
+            </li>
+            <li>
+              <h3><label for="genero">Géneros:</label></h3>
+            </li>
+              <li>
+                <div class="generosdiv">
+                  <label for="action">Action</label>
+                  <input type="checkbox" id="action" value="Action">
+                  <label for="adventure">Adventure</label>
+                  <input type="checkbox" id="adventure" value="Adventure">
+                  <label for="animation">Animation</label>
+                  <input type="checkbox" id="animation" value="Animation">
+                  <label for="biography">Biography</label>
+                  <input type="checkbox" id="biography" value="Biography">
+                  <label for="comedy">Comedy</label>
+                  <input type="checkbox" id="comedy" value="Comedy">
+                  <label for="crime">Crime</label>
+                  <input type="checkbox" id="crime" value="Crime">
+                  <label for="documentary">Documentary</label>
+                  <input type="checkbox" id="documentary" value="Documentary">
+                  <label for="drama">Drama</label>
+                  <input type="checkbox" id="drama" value="Drama">
+                  <label for="family">Family</label>
+                  <input type="checkbox" id="family" value="Family">
+                  <label for="fantasy">Fantasy</label>
+                  <input type="checkbox" id="fantasy" value="Fantasy">
+                  <label for="film-noir">Film-Noir</label>
+                  <input type="checkbox" id="film-noir" value="Film-Noir">
+                  <label for="history">History</label>
+                  <input type="checkbox" id="history" value="History">
+                  <label for="horror">Horror</label>
+                  <input type="checkbox" id="horror" value="Horror">
+                  <label for="musical">Musical</label>
+                  <input type="checkbox" id="musical" value="Musical">
+                  <label for="mystery">Mystery</label>
+                  <input type="checkbox" id="mystery" value="Mystery">
+                  <label for="romance">Romance</label>
+                  <input type="checkbox" id="romance" value="Romance">
+                  <label for="sci-fi">Sci-Fi</label>
+                  <input type="checkbox" id="sci-fi" value="Sci-Fi">
+                  <label for="sport">Sport</label>
+                  <input type="checkbox" id="sport" value="Sport">
+                  <label for="thriller">Thriller</label>
+                  <input type="checkbox" id="thriller" value="Thriller">
+                  <label for="war">War</label>
+                  <input type="checkbox" id="war" value="War">
+                  <label for="western">Western</label>
+                  <input type="checkbox" id="western" value="Western">
+                  <label for="superhero">Superhero</label>
+                  <input type="checkbox" id="superhero" value="Superhero">
+                  <label for="indie">Indie</label>
+                  <input type="checkbox" id="indie" value="Indie">
+                  <label for="disaster">Disaster</label>
+                  <input type="checkbox" id="disaster" value="Disaster">
+                  <label for="experimental">Experimental</label>
+                  <input type="checkbox" id="experimental" value="Experimental">
+                  <label for="short">Short</label>
+                  <input type="checkbox" id="short" value="Short">
+                  <label for="music">Music</label>
+                  <input type="checkbox" id="music" value="Music">
+                  <label for="spy">Spy</label>
+                  <input type="checkbox" id="spy" value="Spy">
+                  <label for="political">Political</label>
+                  <input type="checkbox" id="political" value="Political">
+                  <label for="satire">Satire</label>
+                  <input type="checkbox" id="satire" value="Satire">
+              </div>              
+            </li>
+            <li>
+              <h3><label for="puntuacion">Calificación:</label></h3>
+            </li>
+              <li>
+              <input id="puntuacion" class="inputpelicula" type="text" placeholder="Escribe aqui" required>
+            </li>
+            <li>
+              <h3><label for="poster">Url de la imagen:</label></h3>  
+            </li>
+              <li> 
+              <input id="poster" class="inputpelicula" type="url" placeholder="Escribe aqui" required>
+            </li>
+            <li class="center">
+              <button id="subir" class="btn btn-success" type="submit">Enviar</button>
+              <button id="limpiar" class="btn btn-danger" type="button">Limpiar</button>
+            </li>
+          </ul>
+        </form>
+       </article>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <!-- Aquí estan todas mis redes e información de contacto -->
+      <div class="redes">
+        <ul>
+          <li>
+            <b>Contacto</b>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+54 9 2920 26-6443</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>julivilleaugusto@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="redes">
+        <ul>
+          <li>
+            <div class="redes">
+              <ul>
+                  <li>
+                      <b>Redes</b>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/in/julian-villegas-fullstack/" target="_blank">
+                          <i class="fa-brands fa-linkedin"></i> Linkedin
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/1JulianV" target="_blank">
+                          <i class="fa-brands fa-github"></i> Github
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <script src="./public/bundle.js"></script>
+          </body>
+          </html>

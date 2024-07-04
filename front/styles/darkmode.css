@@ -1,0 +1,36 @@
+.links input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+#modoOscuro {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/luna.png") no-repeat center/contain;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 50px;
+    transition: ease-in 0.5s;
+}
+
+#modoOscuro.activo {
+    background-image: url("../images/sol.png");
+}
+
+.bodyOscuro {
+    background: url("../images/darkcinema.gif") center/cover no-repeat fixed;
+    transition: ease-in 0.5s;
+    color: #ffffff;
+}
+
+footer.footerOscuro {
+    color: #ffffff;
+    background-color: #240077;
+}
+
+.changeOscuro {
+    background-color: #290b6f;
+}
